@@ -1,0 +1,4 @@
+# Home Assistant Add-on Repository
+name: "YouTube MQTT Monitor Add-on"
+url: "https://github.com/col000r/YouTube-MQTT-HomeAssistant.git"
+maintainer: "Markus Hofer <markus@brightlight.rocks>"

@@ -1,0 +1,30 @@
+name: "YouTube Channel Monitor"
+version: "1.0.3"
+slug: "youtube_monitor"
+description: "Monitor YouTube channel statistics and report to Home Assistant"
+url: "https://github.com/col000r/YouTube-MQTT-HomeAssistant.git"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+services:
+  - mqtt:need
+options:
+  youtube_api_key: ""
+  channels:
+    - id: ""
+      name: ""
+  check_interval_minutes: 5
+  ha_discovery_prefix: "homeassistant"
+  log_level: "info"
+schema:
+  youtube_api_key: str
+  channels:
+    - id: str
+      name: str
+  check_interval_minutes: int(1,1440)?
+  ha_discovery_prefix: str?
+  log_level: list(debug|info|warn|error)?
